@@ -98,7 +98,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviePoste
                     .error(R.drawable.ic_cinema)
                     .placeholder(R.drawable.ic_cinema)
                     .into(binding.ivMoviePoster);
-            binding.txTitle.setText(movie.getTitle());
+          //  binding.txTitle.setText(movie.getTitle());
 
         }
 

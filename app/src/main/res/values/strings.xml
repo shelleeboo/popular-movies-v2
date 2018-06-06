@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Popular Movies</string>
-    <string name="API_KEY">YOUR THEMOVIEDB.ORG API KEY GOES HERE</string>
     <string name="imageSize">w185</string>
     <string name="top_movie_description">Top Movies</string>
     <string name="BASE_URL">http://api.themoviedb.org</string>

@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import javax.inject.Inject;
 
+import io.shellee.movies.BuildConfig;
 import io.shellee.movies.MoviesApplication;
 import io.shellee.movies.R;
 import io.shellee.movies.databinding.ActivityMoviesBinding;
@@ -88,7 +89,7 @@ public class MoviesActivity extends AppCompatActivity
 
     private void setupViewModel(){
 
-        apiKey = getString(R.string.API_KEY);
+        apiKey = BuildConfig.API_KEY;
         moviesViewModel = ViewModelProviders.of(this, viewModelFactory)
                 .get(MoviesViewModel.class);
         //todo don't reload if there is no network connection.

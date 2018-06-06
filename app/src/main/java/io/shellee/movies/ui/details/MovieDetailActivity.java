@@ -25,6 +25,7 @@ public class MovieDetailActivity extends AppCompatActivity {
     public static final String EXTRA_MOVIE_ID = "extraMovieId";
     public static final String INSTANCE_MOVIE_ID = "instanceMovieId";
     public static final String EXTRA_API_KEY = "extraApiKey";
+    public static final String RATING_FORMAT = "%s/10";
 
     private static final int DEFAULT_MOVIE_ID = -1;
     private int movieId = DEFAULT_MOVIE_ID;
@@ -73,7 +74,7 @@ public class MovieDetailActivity extends AppCompatActivity {
     private void populateUI(Movie movie) {
         binding.title.setText(movie.getTitle());
         binding.synopsis.setText(movie.getSynopsis());
-        binding.votes.setText(String.valueOf(movie.getVoteCount()));
+        binding.votes.setText(String.format(RATING_FORMAT , String.valueOf(movie.getUserRating())));
         binding.releaseDate.setText(movie.getReleaseDate());
         picasso.load(NetworkUtils.buildUri(movie.getBackdrop(), getString(R.string.imageSize)))
                 .into(binding.backdropIv);

@@ -15,14 +15,15 @@
 
             <ImageView
                 android:id="@+id/backdrop_iv"
+                style="@style/backdropImage"
+
                 android:contentDescription="@string/placeholder"
                 app:layout_constraintBottom_toBottomOf="@+id/poster_iv"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="@+id/activity_movies_detail"
                 app:layout_constraintRight_toRightOf="@+id/activity_movies_detail"
                 app:layout_constraintTop_toTopOf="@+id/activity_movies_detail"
-                app:layout_constraintHorizontal_bias="1.0"
-                tools:src="@drawable/free"
-                style="@style/backdropImage" />
+                tools:src="@drawable/free" />
 
             <ImageView
                 android:id="@+id/poster_iv"
@@ -87,6 +88,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/votes"
                 android:text="@string/synopsis"
                 style="@style/synopsis" />
+
+            <ImageButton
+                android:id="@+id/favoriteButton"
+                app:layout_constraintBottom_toBottomOf="@+id/poster_iv"
+                app:layout_constraintStart_toEndOf="@+id/poster_iv"
+                app:layout_constraintTop_toBottomOf="@+id/backdrop_iv"
+                app:srcCompat="@drawable/ic_unfavorite"
+                android:contentDescription="@string/placeholder"
+                style="@style/ImageButton" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

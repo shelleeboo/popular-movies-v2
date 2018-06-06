@@ -46,7 +46,7 @@
 
     <style name="cardView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">300dp</item>
+        <item name="android:layout_height">320dp</item>
         <item name="android:layout_margin">4dp</item>
         <item name="android:clickable">true</item>
         <item name="android:foreground">?android:selectableItemBackground</item>
@@ -63,13 +63,13 @@
 
     <style name="topMoviePoster">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">246dp</item>
+        <item name="android:layout_height">350dp</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
     <style name="backdropImage">
         <item name="android:layout_width">@dimen/no_width</item>
-        <item name="android:layout_height">@dimen/no_height</item>
+        <item name="android:layout_height">196dp</item>
         <item name="android:layout_marginBottom">40dp</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">centerCrop</item>
@@ -86,6 +86,14 @@
     <style name="barrier">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
     </style>
 
 
